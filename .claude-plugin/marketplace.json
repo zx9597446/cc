@@ -1,0 +1,52 @@
+{
+  "name": "zx9597446-cc-marketplace",
+  "description": "A personal collection of Claude Code plugins and skills",
+  "version": "1.0.0",
+  "owner": {
+    "name": "zx9597446",
+    "url": "https://github.com/zx9597446"
+  },
+  "metadata": {
+    "description": "Personal marketplace for Claude Code plugins and skills",
+    "homepage": "https://github.com/zx9597446/cc"
+  },
+  "plugins": [
+    {
+      "name": "skill-creator",
+      "source": "./plugins/skill-creator",
+      "description": "Tools and guidance for creating effective Claude skills",
+      "version": "1.0.0",
+      "author": {
+        "name": "zx9597446",
+        "url": "https://github.com/zx9597446"
+      },
+      "category": "development",
+      "homepage": "https://github.com/zx9597446/cc",
+      "keywords": [
+        "skills",
+        "development",
+        "templates",
+        "guidance"
+      ]
+    },
+    {
+      "name": "code-analyzer",
+      "source": "./plugins/code-analyzer",
+      "description": "Advanced code analysis for comprehensive codebase analysis, pattern detection, and architectural understanding",
+      "version": "1.0.0",
+      "author": {
+        "name": "zx9597446",
+        "url": "https://github.com/zx9597446"
+      },
+      "category": "development",
+      "homepage": "https://github.com/zx9597446/cc",
+      "keywords": [
+        "code-analysis",
+        "architecture",
+        "patterns",
+        "debugging",
+        "quality"
+      ]
+    }
+  ]
+}

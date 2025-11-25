@@ -1,0 +1,17 @@
+{
+  "name": "skill-creator",
+  "description": "Tools and guidance for creating effective Claude skills",
+  "version": "1.0.0",
+  "author": {
+    "name": "zx9597446",
+    "url": "https://github.com/zx9597446"
+  },
+  "homepage": "https://github.com/zx9597446/cc",
+  "keywords": [
+    "skills",
+    "development",
+    "templates",
+    "guidance"
+  ],
+  "skills": "./skills/"
+}
