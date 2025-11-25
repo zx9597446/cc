@@ -17,18 +17,9 @@ Then install individual plugins:
 ```bash
 # Install skill-creator plugin
 claude plugin install skill-creator@zx9597446/cc
-```
 
-### From Local Path
-
-If you have cloned this repository locally:
-
-```bash
-# Add marketplace from local path
-claude plugin marketplace add ./.claude-plugin/marketplace.json
-
-# Install skill-creator plugin
-claude plugin install skill-creator@zx9597446-cc-marketplace
+# Install code-analyzer plugin
+claude plugin install code-analyzer@zx9597446/cc
 ```
 
 ## 📦 Available Plugins
@@ -63,68 +54,9 @@ plugin-name/
 └── agents/                  # Sub-agents (optional)
 ```
 
-## 🛠️ Development
-
-### Adding New Plugins
-
-1. Create a new directory in `plugins/`
-2. Add `.claude-plugin/plugin.json` with plugin metadata
-3. Organize components (skills, commands, agents) in appropriate directories
-4. Update `.claude-plugin/marketplace.json` to include the new plugin
-
-### Local Testing
-
-To test plugins locally before pushing to GitHub:
-
-```bash
-# Add marketplace from local path
-claude plugin marketplace add ./.claude-plugin/marketplace.json
-
-# Install and test your new plugin
-claude plugin install your-new-plugin@zx9597446-cc-marketplace
-
-# Update marketplace to get latest changes
-claude plugin marketplace update zx9597446-cc-marketplace
-```
-
-### Plugin Configuration
-
-Each plugin requires a `plugin.json` file:
-
-```json
-{
-  "name": "plugin-name",
-  "description": "Plugin description",
-  "version": "1.0.0",
-  "author": {
-    "name": "Your Name",
-    "url": "https://github.com/your-username"
-  },
-  "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
-}
-```
-
 ## 📄 License
 
 Individual plugins may have their own licenses. See each plugin directory for details.
-
-## 🔧 Troubleshooting
-
-### Common Issues
-
-**Marketplace not found:**
-- Ensure you're using the correct path to `marketplace.json`
-- Check that the marketplace name in `marketplace.json` uses kebab-case (no spaces)
-
-**Plugin not found:**
-- Verify the plugin name matches exactly in `marketplace.json`
-- Check that the plugin has a valid `.claude-plugin/plugin.json` file
-
-**Local installation issues:**
-- Make sure the local path is accessible
-- Restart Claude Code after installing plugins
 
 ## 🤝 Contributing
 
@@ -133,4 +65,3 @@ This is a personal marketplace. For community contributions, please check the of
 ---
 
 Built with ❤️ by [zx9597446](https://github.com/zx9597446)
-
