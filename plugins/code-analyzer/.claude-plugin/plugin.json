@@ -1,6 +1,6 @@
 {
   "name": "code-analyzer",
-  "description": "Advanced code analysis for comprehensive codebase analysis, pattern detection, and architectural understanding",
+  "description": "AI-powered code analysis with Qwen/Gemini CLI tools. Pattern detection, architecture review, quality assessment, code reviews. Configure with /code-analyzer:tool",
   "version": "1.0.0",
   "author": {
     "name": "zx9597446",

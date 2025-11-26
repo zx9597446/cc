@@ -1,105 +1,104 @@
 ---
 name: code-analyzer
-description: Comprehensive code analysis using CLI tools for pattern detection, architecture review, code quality assessment, and systematic code reviews. Use when: (1) Analyzing codebases for patterns and architecture, (2) Performing code reviews and quality assessments, (3) Identifying technical debt and improvement opportunities, (4) Understanding complex code structures, (5) Preparing for refactoring or migration. Configure with /code-analyzer:tool command.
+description: AI-powered code analysis with Qwen/Gemini CLI tools. Pattern detection, architecture review, quality assessment, code reviews. Configure with /code-analyzer:tool
 allowed-tools:
   - Bash
 ---
 
 # Code Analyzer
 
-Use advanced CLI tools for comprehensive codebase analysis, pattern detection, and systematic code reviews.
+Advanced AI-powered code analysis for comprehensive codebase understanding, pattern detection, and quality assessment.
 
-## Quick Start
+## 🚀 Quick Start
 
-When you need code analysis, express your analysis needs:
+Simply express your analysis needs:
 
 ```
 Analyze authentication patterns in this codebase
 Provide architectural overview of the application
 Review code quality and identify technical debt
 Scan for security vulnerabilities
-Perform systematic code review
+Find React hooks usage patterns
 ```
 
-## Analysis Workflow
+## ⚡ Key Features
 
-1. **Configure Tool**: Use `/code-analyzer:tool` to select analysis tool
-2. **Define Scope**: Specify analysis type (patterns, architecture, quality, review)
-3. **Execute Analysis**: Run analysis with configured tool
-4. **Review Results**: Interpret patterns and provide recommendations
+- **Smart Pattern Detection**: Authentication, API usage, data flow, component structures
+- **Architecture Insights**: System overview, data architecture, integration patterns
+- **Quality Assessment**: Performance, security, maintainability analysis
+- **Code Review**: Systematic reviews, technical debt identification
+- **Tool Flexibility**: Switch between Qwen CLI (default) and Gemini CLI
+- **Optimized Output**: Returns concise summaries + full report paths
+- **Auto-Retry**: Built-in retry mechanism for reliability
 
-## Analysis Scenarios
+## ⚠️ IMPORTANT: Wait for Completion
 
-### Pattern Detection
-- Authentication patterns, API usage, data flow patterns
-- State management, component relationships, architectural patterns
+Analysis takes 2-5 minutes. You MUST:
+1. Execute command
+2. **WAIT for full completion** (do NOT timeout)
+3. Process results only after completion
 
-### Architecture Analysis
-- System architecture, component hierarchy, data flow
-- Integration patterns, service boundaries, design decisions
+## 🔧 Configuration
 
-### Quality Assessment
-- Performance bottlenecks, security vulnerabilities, code consistency
-- Best practices adherence, maintainability issues
-
-### Code Review
-- Systematic code review, technical debt identification
-- Refactoring opportunities, improvement suggestions
-
-### Technology Audit
-- Dependencies, testing strategy, migration readiness
-- Technology stack analysis, integration patterns
-
-## Resources
-
-- **Scripts**: See `scripts/analyze_codebase.py` for analysis command templates
-- **References**: See `references/analysis_patterns.md` for detailed analysis patterns
-
-## Configuration
-
-Use the `/code-analyzer` command to configure which CLI tool to use:
-
-### Set Analysis Tool
-```
-/code-analyzer:tool gemini    # Use Gemini CLI
-/code-analyzer:tool qwen      # Use Qwen CLI (default)
-```
-
-### Check Status
-```
-/code-analyzer:status
-```
-
-### Get Help
-```
-/code-analyzer:help
-```
-
-## Implementation
-
-### Execution Workflow
-
-When performing code analysis:
-
-1. **Determine Analysis Type**: Identify the analysis scenario and target based on user request
-2. **Execute Analysis**: Run the CLI wrapper with appropriate parameters:
-   ```bash
-   python scripts/analyze_codebase.py execute --scenario <scenario> --target <target>
-   ```
-3. **Wait for Completion**: This command may take several minutes to complete. **Wait for the CLI command to fully execute** before proceeding.
-4. **Analyze Results**: Review the output and provide insights based on the analysis results.
-
-### Important Notes
-
-- **Wait for Completion**: The CLI analysis may take 2-5 minutes. Ensure the command completes before continuing.
-- **Error Handling**: If the analysis fails, check the error message and provide guidance.
-- **Tool Configuration**: Use `/code-analyzer:tool` to configure preferred analysis tool (qwen or gemini).
-
-### Example Execution
-
-For authentication pattern analysis:
 ```bash
-python scripts/analyze_codebase.py execute --scenario patterns --target authentication
+/code-analyzer:tool qwen      # Use Qwen CLI (default)
+/code-analyzer:tool gemini    # Use Gemini CLI
+/code-analyzer:status         # Check current configuration
 ```
 
-**Wait for this command to complete** - it will provide comprehensive authentication pattern analysis.
+## 🎯 Execution
+
+```bash
+python scripts/analyze_codebase.py execute-optimized \
+  --scenario <patterns|architecture|quality|review|audit|features|documentation> \
+  --target <specific-target>
+```
+
+**Returns:**
+- ✅ **Summary**: ~500 tokens of key findings (saves 90% tokens!)
+- 📁 **Full Report**: File path for complete analysis
+- 🔍 **Use Read tool** to access full report if user needs details
+
+## 📊 Analysis Scenarios
+
+### 🔍 Pattern Detection
+- **authentication**: Login flows, session management, access control
+- **data-flow**: State management, data propagation patterns
+- **api-usage**: API design, integration patterns, error handling
+- **component-structure**: Component hierarchies, module organization
+
+### 🏗️ Architecture Analysis
+- **overview**: System architecture, component relationships
+- **data-architecture**: Data models, database schemas, access patterns
+- **integration**: External services, message systems, protocols
+
+### 🔎 Quality Assessment
+- **performance**: Bottlenecks, optimization opportunities
+- **security**: Vulnerabilities, data protection, access control
+- **maintainability**: Code complexity, coupling, readability
+
+### 📝 Code Review
+- **systematic**: Code smells, anti-patterns, technical debt
+- **security**: Security vulnerabilities, data handling issues
+- **performance**: Performance bottlenecks, optimization areas
+- **architecture**: Design decisions, technology choices
+
+### 🔧 Technology Audit
+- **dependencies**: Third-party libraries, security vulnerabilities
+- **testing**: Test coverage, testing patterns, quality gates
+- **migration**: Technology stack assessment, upgrade readiness
+
+### 🚀 Feature Analysis
+- **trace**: Feature implementation tracking across files
+- **api-endpoints**: REST routes, GraphQL resolvers, authentication
+- **react-hooks**: useState, useEffect, useContext patterns
+- **database-queries**: SQL queries, ORM usage, connection handling
+
+### 📚 Documentation
+- **onboarding**: Key concepts, setup requirements, learning paths
+- **architecture**: System components, data flow, design decisions
+- **api-reference**: Endpoints, parameters, responses, examples
+
+## 📖 Resources
+
+Detailed analysis patterns: `references/analysis_patterns.md` (loaded on demand)

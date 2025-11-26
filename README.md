@@ -25,28 +25,15 @@ claude plugin install code-analyzer@zx9597446/cc
 ### 🔧 Development Tools
 
 
-- **code-analyzer** - Advanced code analysis tools
-  - Comprehensive codebase analysis and pattern detection
-  - Automatic architectural understanding and system overviews
-  - Code quality assessment and security vulnerability scanning
-  - Technology stack analysis and dependency mapping
-
-## 🏗️ Plugin Structure
-
-Each plugin in this marketplace follows the Claude Code best practices:
-
-```
-plugin-name/
-├── .claude-plugin/
-│   └── plugin.json          # Plugin configuration
-├── skills/                  # Skills directory
-│   └── skill-name/          # Individual skill
-│       ├── SKILL.md         # Skill documentation
-│       ├── references/      # Reference materials
-│       └── scripts/         # Helper scripts
-├── commands/                # Custom slash commands (optional)
-└── agents/                  # Sub-agents (optional)
-```
+- **code-analyzer** - Advanced AI-powered code analysis
+  - 🎯 **Smart Pattern Detection**: Authentication flows, API usage, data flow patterns, component structures
+  - 🏗️ **Architecture Insights**: System overview, data architecture, integration patterns, design decisions
+  - 🔍 **Quality Assessment**: Performance bottlenecks, security vulnerabilities, maintainability analysis
+  - 📊 **Code Review**: Systematic reviews, technical debt identification, improvement recommendations
+  - 🔧 **Tool Flexibility**: Switch between Qwen CLI (default) and Gemini CLI for analysis
+  - ⚡ **Optimized Output**: Returns concise summaries + full report paths to save 90% tokens
+  - 🔄 **Auto-Retry**: Built-in retry mechanism for reliable execution
+  - 📚 **7 Analysis Categories**: Patterns, Architecture, Quality, Review, Audit, Features, Documentation
 
 ## 📄 License
 
