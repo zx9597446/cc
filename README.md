@@ -15,8 +15,6 @@ claude plugin marketplace add zx9597446/cc
 Then install individual plugins:
 
 ```bash
-# Install skill-creator plugin
-claude plugin install skill-creator@zx9597446/cc
 
 # Install code-analyzer plugin
 claude plugin install code-analyzer@zx9597446/cc
@@ -26,10 +24,6 @@ claude plugin install code-analyzer@zx9597446/cc
 
 ### 🔧 Development Tools
 
-- **skill-creator** - Tools and guidance for creating effective Claude skills
-  - Skill creation templates and best practices
-  - Scripts for initializing, validating, and packaging skills
-  - Reference documentation for skill development
 
 - **code-analyzer** - Advanced code analysis tools
   - Comprehensive codebase analysis and pattern detection
